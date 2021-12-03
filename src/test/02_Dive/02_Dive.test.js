@@ -22,4 +22,15 @@ describe("day 2", () => {
       expect(finalDepth(fileData)).toBe(2070300);
     });
   });
+
+  describe("depth multiplier with aim", () => {
+    test("simple", () => {
+      expect(finalDepth(course, true)).toBe(900);
+    });
+
+    test("difficult", () => {
+      const fileData = readAsArray(path.resolve(__dirname, "./input.txt"));
+      expect(finalDepth(fileData, true)).toBe(2078985210);
+    });
+  });
 });
