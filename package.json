@@ -1,0 +1,16 @@
+{
+  "name": "appsample",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Learning Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Chikeluba Anusionwu",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.3",
+    "prettier": "^2.5.0"
+  }
+}
