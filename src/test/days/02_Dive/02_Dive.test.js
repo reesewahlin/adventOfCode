@@ -1,6 +1,6 @@
-const { readAsArray } = require("../../lib/file");
+const { readAsArray } = require("../../../lib/file");
 const path = require("path");
-const { finalDepth } = require("../../days/02_Dive/02_Dive");
+const { finalDepth } = require("../../../days/02_Dive/02_Dive");
 
 const course = [
   "forward 5",

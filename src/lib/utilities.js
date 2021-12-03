@@ -17,7 +17,12 @@ const sumList = (list) => {
   return list.reduce((prev, curr) => prev + curr);
 };
 
+const binaryToDecimal = (binaryString) => {
+  return parseInt(binaryString, 2);
+};
+
 module.exports = {
   get3Window,
   sumList,
+  binaryToDecimal,
 };
