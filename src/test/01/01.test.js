@@ -1,16 +1,26 @@
-const countNumIncreases = require("../../days/01/01");
 const day1Input = require("./input");
+const { countNumIncreases, countWindowIncreases } = require("../../days/01/01");
 
-describe("count increases", () => {
-  test("simple", () => {
-    const depthList = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
+const depthList = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
 
-    expect(countNumIncreases(depthList)).toBe(7);
+describe("day 1", () => {
+  describe("count increases", () => {
+    test("simple", () => {
+      expect(countNumIncreases(depthList)).toBe(7);
+    });
+
+    test("difficult", () => {
+      expect(countNumIncreases(day1Input)).toBe(1602);
+    });
   });
 
-  test("difficult", () => {
-    const depthList = day1Input;
+  describe("count window increases", () => {
+    test("simple", () => {
+      expect(countWindowIncreases(depthList)).toBe(5);
+    });
 
-    expect(countNumIncreases(depthList)).toBe(1602);
+    test("difficult", () => {
+      expect(countWindowIncreases(day1Input)).toBe(1633);
+    });
   });
 });
