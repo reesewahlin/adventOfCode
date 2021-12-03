@@ -1,5 +1,8 @@
 const day1Input = require("./input");
-const { countNumIncreases, countWindowIncreases } = require("../../days/01/01");
+const {
+  countNumIncreases,
+  countWindowIncreases,
+} = require("../../days/01_Sonar/01_Sonar");
 
 const depthList = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
 
