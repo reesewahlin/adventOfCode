@@ -1,6 +1,6 @@
-const { readAsArray } = require("../../lib/file");
+const { readFileToArray } = require("../../../lib/file");
 const path = require("path");
-const { finalDepth } = require("../../days/02_Dive/02_Dive");
+const { finalDepth } = require("../../../days/02_Dive/02_Dive");
 
 const course = [
   "forward 5",
@@ -18,7 +18,7 @@ describe("day 2", () => {
     });
 
     test("difficult", () => {
-      const fileData = readAsArray(path.resolve(__dirname, "./input.txt"));
+      const fileData = readFileToArray(path.resolve(__dirname, "./input.txt"));
       expect(finalDepth(fileData)).toBe(2070300);
     });
   });
@@ -29,7 +29,7 @@ describe("day 2", () => {
     });
 
     test("difficult", () => {
-      const fileData = readAsArray(path.resolve(__dirname, "./input.txt"));
+      const fileData = readFileToArray(path.resolve(__dirname, "./input.txt"));
       expect(finalDepth(fileData, true)).toBe(2078985210);
     });
   });

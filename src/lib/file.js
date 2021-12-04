@@ -11,12 +11,12 @@ const readFile = (path) => {
   }
 };
 
-const readAsArray = (path) => {
+const readFileToArray = (path) => {
   const fileData = readFile(path);
   return fileData.split("\n");
 };
 
 module.exports = {
   readFile,
-  readAsArray,
+  readFileToArray,
 };

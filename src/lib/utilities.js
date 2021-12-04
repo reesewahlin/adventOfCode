@@ -14,10 +14,23 @@ const get3Window = (startIndex, list) => {
  * @returns {number} sum
  */
 const sumList = (list) => {
+  if (!list || list.length === 0) {
+    return 0;
+  }
   return list.reduce((prev, curr) => prev + curr);
+};
+
+/**
+ * Convert binary string to decimal number
+ * @param binaryString
+ * @returns {number}
+ */
+const binaryToDecimal = (binaryString) => {
+  return parseInt(binaryString, 2);
 };
 
 module.exports = {
   get3Window,
   sumList,
+  binaryToDecimal,
 };
